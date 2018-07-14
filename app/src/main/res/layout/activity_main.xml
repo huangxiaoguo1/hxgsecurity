@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <!--
+        MD5
+        -->
+        <EditText
+            android:id="@+id/et_md5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="黄晓果" />
+
+        <Button
+            android:id="@+id/onMD5Click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="MD5加密" />
+
+        <TextView
+            android:id="@+id/tv_md5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="100dp"
+            android:hint="MD5加密内容"
+            android:padding="10dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+        <!--
+        Base64
+        -->
+        <EditText
+            android:id="@+id/et_base64"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="黄晓果" />
+
+        <Button
+            android:id="@+id/onBase64EncryptClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Base64加密" />
+
+        <TextView
+            android:id="@+id/tv_base64_encrypt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="100dp"
+            android:hint="Bsar64加密内容"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/onBase64DecodeClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Base64解密" />
+
+        <TextView
+            android:id="@+id/tv_base64_decode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="100dp"
+            android:hint="Bsar64解密内容"
+            android:padding="10dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+        <!--
+            AES
+        -->
+        <EditText
+            android:id="@+id/et_aes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="黄晓果" />
+
+        <Button
+            android:id="@+id/onAesEncryptClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="AES加密" />
+
+        <TextView
+            android:id="@+id/tv_aes_encrypt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="100dp"
+            android:hint="AES加密内容"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/onAesDecodeClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="AES解密" />
+
+        <TextView
+            android:id="@+id/tv_aes_decode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="100dp"
+            android:hint="AES解密内容"
+            android:padding="10dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+        <!--
+            RSA加密解密
+        -->
+        <EditText
+            android:id="@+id/et_rsa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="黄晓果" />
+
+        <Button
+            android:id="@+id/onRsaEncryptClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="RSA公钥加密" />
+
+        <TextView
+            android:id="@+id/tv_rsa_encrypt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="100dp"
+            android:hint="RSA公钥加密内容"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/onRsaDecodeClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="RSA私钥解密" />
+
+        <TextView
+            android:id="@+id/tv_rsa_decode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="100dp"
+            android:hint="RSA私钥解密内容"
+            android:padding="10dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+        <!--
+            RSA签名
+        -->
+        <EditText
+            android:id="@+id/et_rsa_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="黄晓果" />
+
+        <Button
+            android:id="@+id/onRsaSignClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="RSA签名" />
+
+        <TextView
+            android:id="@+id/tv_rsa_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="100dp"
+            android:hint="RSA签名内容"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/onRsaVerifyClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="RSA校验签名" />
+
+        <TextView
+            android:id="@+id/tv_rsa_verify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="100dp"
+            android:hint="RSA校验签名内容"
+            android:padding="10dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+        <!--
+           给予RSA加密的SP存储
+       -->
+        <EditText
+            android:id="@+id/et_rsa_sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="黄晓果" />
+
+        <Button
+            android:id="@+id/onRsaSPSaveClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="SP存入" />
+
+        <Button
+            android:id="@+id/onRsaSPGetClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="SP读取" />
+
+        <TextView
+            android:id="@+id/tv_rsa_sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="100dp"
+            android:hint="RSA_SP内容"
+            android:padding="10dp" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
